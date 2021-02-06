@@ -1,0 +1,14 @@
+name = "StarComm"
+uuid = "9294f9a5-91f0-4dac-8847-f18cc24e5f35"
+keywords = ["Start Trek"]
+license = "MIT"
+desc = "The next-generation comm. for USS fedaration members"
+version = "0.0.1"
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+PackageCompiler = "9b87118b-4619-50d2-8e1e-99f35a4d4d9d"
+StructTypes = "856f2bd8-1eba-4b0a-8007-ebc267875bd4"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
