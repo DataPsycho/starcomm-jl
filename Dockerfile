@@ -9,9 +9,9 @@ ENV REPO_URL=StarComm
 COPY . $REPO_URL
 WORKDIR $REPO_URL
 
-RUN julia deploy/packagecompile.jl
-# RUN julia deploy/nocompile.jl
+# RUN julia deploy/packagecompile.jl
+RUN julia deploy/nocompile.jl
 
 EXPOSE 8080
-ENTRYPOINT ["julia", "--threads", "2", "-JStarComm.so", "-e", "StarComm.run()"]
-# ENTRYPOINT ["julia", "--threads", "2", "serve.jl"]
+# ENTRYPOINT ["julia", "--threads", "2", "-JStarComm.so", "-e", "StarComm.run()"]
+ENTRYPOINT ["julia", "--threads", "2", "serve.jl"]
